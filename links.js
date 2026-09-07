@@ -2,35 +2,46 @@
 // `id` must be unique and stable — it's used as the analytics event name,
 // so once you start getting clicks, don't rename an id or you'll split
 // its history into two events in Umami.
+//
+// `icon` is a path to an image (svg/png/jpg) shown in a rounded square.
+// `iconFit` controls how it's cropped: "contain" (default, for logos) or
+// "cover" (for photos/thumbnails, so they fill the square edge-to-edge).
 const LINKS = [
   {
     id: "newsletter",
     label: "Newsletter",
     url: "https://substack.com/@unpibedecompu",
-    icon: "✉️",
+    icon: "assets/icons/substack.svg",
   },
   {
     id: "podcast",
     label: "Podcast: Un Viaje de Ida",
     url: "https://youtu.be/kpHS9QwU1h0",
-    icon: "🎙️",
+    icon: "assets/podcast-thumb.jpg",
+    iconFit: "cover",
   },
   {
     id: "youtube",
     label: "YouTube",
     url: "https://www.youtube.com/@unpibedecompu",
-    icon: "▶️",
+    icon: "assets/icons/youtube.svg",
   },
   {
     id: "instagram",
     label: "Instagram",
     url: "https://www.instagram.com/unpibedecompu/",
-    icon: "📸",
+    icon: "assets/icons/instagram.svg",
   },
   {
     id: "ai-safety-courses",
     label: "AI safety courses with certificates",
     url: "https://bluedot.org/courses",
-    icon: "🎓",
+    icon: "assets/icons/bluedot.png",
+  },
+  {
+    id: "fuentes",
+    label: "Fuentes",
+    url: "https://docs.google.com/document/d/1qzK2IATqtJLREgmpLPmELEOKJ1Zlz-WDrENbxKnS7ko/edit?tab=t.0",
+    icon: "assets/icons/googledocs.svg",
   },
 ];

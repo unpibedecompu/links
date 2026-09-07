@@ -11,9 +11,12 @@ function renderLinks() {
     // and logs it as a named event so each link's clicks are counted separately.
     a.setAttribute("data-umami-event", `click-${link.id}`);
 
-    const icon = document.createElement("span");
+    const icon = document.createElement("img");
     icon.className = "link-icon";
-    icon.textContent = link.icon;
+    icon.src = link.icon;
+    icon.alt = "";
+    icon.loading = "lazy";
+    if (link.iconFit === "cover") icon.classList.add("link-icon--cover");
 
     const label = document.createElement("span");
     label.className = "link-label";
