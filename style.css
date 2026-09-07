@@ -1,22 +1,22 @@
 :root {
-  --bg: #0f1115;
-  --card: #1a1d24;
-  --card-hover: #23272f;
-  --text: #f5f6f8;
-  --muted: #a3a9b3;
-  --accent: #6ea8fe;
-  --border: #2a2e37;
+  --bg: #150f22;
+  --card: #201a33;
+  --card-hover: #2b2244;
+  --text: #f6f3fd;
+  --muted: #ad9fd1;
+  --accent: #a78bfa;
+  --border: #362a54;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #f5f6f8;
+    --bg: #f5f1fc;
     --card: #ffffff;
-    --card-hover: #eef1f6;
-    --text: #14161a;
-    --muted: #5a6270;
-    --accent: #2f6fed;
-    --border: #e2e5eb;
+    --card-hover: #f0e7fc;
+    --text: #170f28;
+    --muted: #6c6285;
+    --accent: #8b5cf6;
+    --border: #e3d6f8;
   }
 }
 
@@ -57,15 +57,24 @@ body {
   height: 96px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--border);
+  border: 3px solid var(--accent);
   margin-bottom: 16px;
   background: var(--card);
 }
 
 .name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0 0 8px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.divider {
+  width: 36px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin: 10px auto 14px;
 }
 
 .bio {
