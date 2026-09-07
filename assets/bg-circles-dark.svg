@@ -6,13 +6,21 @@
     <circle cx="70" cy="480" r="26" />
     <circle cx="560" cy="430" r="42" />
     <circle cx="420" cy="560" r="18" />
+    <circle cx="430" cy="220" r="28" />
+    <circle cx="180" cy="280" r="22" />
+    <circle cx="560" cy="180" r="16" />
+    <circle cx="230" cy="560" r="20" />
   </g>
   <g fill="#3a2c5c">
-    <circle cx="106" cy="121" r="38" />
-    <circle cx="464" cy="64" r="23" />
+    <circle cx="104" cy="119" r="38" />
+    <circle cx="466" cy="66" r="23" />
     <circle cx="304" cy="377" r="49" />
-    <circle cx="77" cy="478" r="16" />
-    <circle cx="552" cy="438" r="27" />
-    <circle cx="425" cy="556" r="10" />
+    <circle cx="73" cy="479" r="16" />
+    <circle cx="554" cy="436" r="27" />
+    <circle cx="422" cy="559" r="10" />
+    <circle cx="433" cy="218" r="18" />
+    <circle cx="178" cy="281" r="14" />
+    <circle cx="561" cy="179" r="10" />
+    <circle cx="232" cy="559" r="13" />
   </g>
 </svg>
