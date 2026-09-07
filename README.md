@@ -1,4 +1,6 @@
-# links_tracker
+# links
+
+Live at **[unpibedecompu.github.io/links](https://unpibedecompu.github.io/links/)**.
 
 A tiny self-hosted Linktree-style page for [@unpibedecompu](https://www.instagram.com/unpibedecompu/), with real per-link click analytics (which Linktree's free plan doesn't give you).
 
