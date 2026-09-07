@@ -13,17 +13,11 @@ Open `links.js` and edit the `LINKS` array — each entry is `{ id, label, url, 
 
 No other file needs to change to add/remove/reorder links.
 
-## Enabling click analytics (one-time, ~2 minutes)
+## Click analytics
 
-This repo ships ready to track clicks the moment analytics is wired up — you just need an Umami account, since that's a third-party signup only you should do:
+Wired up via [Umami Cloud](https://cloud.umami.is) (free Hobby plan). The tracking script is already in `index.html`, and every link button carries a `data-umami-event` attribute, so the Umami dashboard shows total visits plus a per-event breakdown (`click-newsletter`, `click-podcast`, `click-youtube`, etc.) — exactly which links people click and how often.
 
-1. Go to [cloud.umami.is](https://cloud.umami.is) and sign up for the free **Hobby** plan (100k events/month, no card required).
-2. Add a website (name it anything, e.g. "unpibedecompu links").
-3. Umami gives you a `<script>` tag with your website ID. Copy it.
-4. Open `index.html`, find the commented-out `<script>` line near the top (search for `UMAMI ANALYTICS`), and uncomment it with your real script tag in place.
-5. Commit and push — GitHub Pages redeploys automatically.
-
-From then on, the Umami dashboard shows total visits plus a per-event breakdown (`click-newsletter`, `click-podcast`, `click-youtube`, etc.) — exactly which links people click and how often.
+To move analytics to a different Umami website later: sign into [cloud.umami.is](https://cloud.umami.is), add/select the website, copy its `data-website-id`, and swap it into the `<script>` tag near the top of `index.html`.
 
 ## Local preview
 
