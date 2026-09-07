@@ -6,17 +6,19 @@
   --muted: #ad9fd1;
   --accent: #a78bfa;
   --border: #362a54;
+  --bg-pattern: url("assets/bg-circles-dark.svg");
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #f5f1fc;
+    --bg: #f0e8ff;
     --card: #ffffff;
-    --card-hover: #f0e7fc;
-    --text: #170f28;
-    --muted: #6c6285;
-    --accent: #8b5cf6;
-    --border: #e3d6f8;
+    --card-hover: #e4d4ff;
+    --text: #1a1a1a;
+    --muted: #5c5470;
+    --accent: #9b5de5;
+    --border: #e4d4ff;
+    --bg-pattern: url("assets/bg-circles-light.svg");
   }
 }
 
@@ -30,7 +32,10 @@ html, body {
 }
 
 body {
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: var(--bg-pattern);
+  background-repeat: repeat;
+  background-size: 640px 640px;
   color: var(--text);
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   min-height: 100vh;
