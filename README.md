@@ -6,12 +6,18 @@ Plain HTML/CSS/JS, no build step, hosted free on GitHub Pages. Analytics via [Um
 
 ## Editing links
 
-Open `links.js` and edit the `LINKS` array — each entry is `{ id, label, url, icon }`.
+Open `links.js` and edit the `LINKS` array — each entry is `{ id, label, url, icon, iconFit?, description? }`.
 
 - `id` is used as the analytics event name (`click-<id>`). Keep it stable once live — renaming it later splits that link's click history into two separate events in Umami.
-- `icon` can be any emoji or short string.
+- `icon` is a path to an image (svg/png/jpg) shown in a rounded square.
+- `iconFit` is `"contain"` (default, for logos) or `"cover"` (for photos/thumbnails).
+- `description` is optional — a short muted line shown under the label.
 
 No other file needs to change to add/remove/reorder links.
+
+## Cache-busting
+
+`index.html` loads `style.css`, `links.js`, and `script.js` with a `?v=N` query string. GitHub Pages caches these for a few minutes, so bump the number on each of those files whenever you edit them and want the change to show up immediately for visitors instead of waiting out the cache.
 
 ## Click analytics
 

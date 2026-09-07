@@ -15,15 +15,25 @@ function renderLinks() {
     icon.className = "link-icon";
     icon.src = link.icon;
     icon.alt = "";
-    icon.loading = "lazy";
     if (link.iconFit === "cover") icon.classList.add("link-icon--cover");
+
+    const text = document.createElement("span");
+    text.className = "link-text";
 
     const label = document.createElement("span");
     label.className = "link-label";
     label.textContent = link.label;
+    text.appendChild(label);
+
+    if (link.description) {
+      const description = document.createElement("span");
+      description.className = "link-description";
+      description.textContent = link.description;
+      text.appendChild(description);
+    }
 
     a.appendChild(icon);
-    a.appendChild(label);
+    a.appendChild(text);
     container.appendChild(a);
   });
 }

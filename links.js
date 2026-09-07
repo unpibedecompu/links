@@ -6,7 +6,14 @@
 // `icon` is a path to an image (svg/png/jpg) shown in a rounded square.
 // `iconFit` controls how it's cropped: "contain" (default, for logos) or
 // "cover" (for photos/thumbnails, so they fill the square edge-to-edge).
+// `description` is optional — a short muted line shown under the label.
 const LINKS = [
+  {
+    id: "instagram",
+    label: "Instagram",
+    url: "https://www.instagram.com/unpibedecompu/",
+    icon: "assets/icons/instagram.svg",
+  },
   {
     id: "newsletter",
     label: "Newsletter",
@@ -27,26 +34,21 @@ const LINKS = [
     icon: "assets/icons/youtube.svg",
   },
   {
-    id: "instagram",
-    label: "Instagram",
-    url: "https://www.instagram.com/unpibedecompu/",
-    icon: "assets/icons/instagram.svg",
-  },
-  {
     id: "ai-safety-courses",
-    label: "AI safety courses with certificates",
+    label: "Cursos de AI safety (con certificado)",
     url: "https://bluedot.org/courses",
     icon: "assets/icons/bluedot.png",
   },
   {
     id: "calendly",
-    label: "Ideas, proyectos o dudas sobre AI safety? Charlemos!",
+    label: "¿Ideas, proyectos o dudas sobre AI safety? ¡Charlemos!",
     url: "https://calendly.com/unpibedecompu/15min",
     icon: "assets/icons/calendly.svg",
   },
   {
     id: "fuentes",
     label: "Fuentes",
+    description: "Fuentes de mis videos",
     url: "https://docs.google.com/document/d/1qzK2IATqtJLREgmpLPmELEOKJ1Zlz-WDrENbxKnS7ko/edit?tab=t.0",
     icon: "assets/icons/googledocs.svg",
   },
