@@ -39,6 +39,12 @@ const LINKS = [
     icon: "assets/icons/bluedot.png",
   },
   {
+    id: "calendly",
+    label: "Ideas, proyectos o dudas sobre AI safety? Charlemos!",
+    url: "https://calendly.com/unpibedecompu/15min",
+    icon: "assets/icons/calendly.svg",
+  },
+  {
     id: "fuentes",
     label: "Fuentes",
     url: "https://docs.google.com/document/d/1qzK2IATqtJLREgmpLPmELEOKJ1Zlz-WDrENbxKnS7ko/edit?tab=t.0",
